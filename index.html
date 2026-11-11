@@ -1,96 +1,130 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabrina Moraes | Portfólio</title>
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Sabrina Moraes, estudante de Engenharia de Software. Projetos com Python, APIs e IA.">
+  <title>Sabrina Moraes | Software Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-<body> 
-<header>
-    <h1>Olá, eu sou Sabrina Moraes 👋</h1>
+<body>
+  <nav class="navbar">
+    <a href="#inicio" class="logo">SM<span>.</span></a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <div class="nav-links">
+      <a href="#sobre">Sobre</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </nav>
 
-    <p>
-        Estudante de Engenharia de Software |
-        APIs | Python | Inteligência Artificial
-    </p>
+  <header class="hero" id="inicio">
+    <div class="hero-content reveal">
+      <span class="eyebrow">ENGENHARIA DE SOFTWARE • BACK-END</span>
+      <h1>Olá, eu sou <span>Sabrina Moraes.</span></h1>
+      <p>
+        Transformando desafios técnicos em soluções com
+        Python, APIs REST e Inteligência Artificial.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#projetos">Explorar projetos ↗</a>
+        <a class="btn secondary" href="https://github.com/moraesabrina" target="_blank" rel="noopener noreferrer">Meu GitHub</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="code-window">
+        <div class="window-dots"><i></i><i></i><i></i></div>
+        <pre><code><span class="code-purple">class</span> Developer:
+    name = <span class="code-green">"Sabrina Moraes"</span>
+    focus = <span class="code-green">"Back-end"</span>
+    skills = [
+        <span class="code-green">"Python"</span>,
+        <span class="code-green">"REST APIs"</span>,
+        <span class="code-green">"AI"</span>
+    ]
 
-    <a href="https://github.com/moraesabrina"
-       target="_blank"
-       rel="noopener noreferrer">
-        Conheça meu GitHub
-    </a>
-</header>
+<span class="code-purple">print</span>(<span class="code-green">"Let's build!"</span>)</code></pre>
+      </div>
+    </div>
+  </header>
 
+  <main>
+    <section id="sobre" class="section reveal">
+      <p class="section-label">01 / SOBRE MIM</p>
+      <h2>Conhecimento técnico com foco em soluções reais.</h2>
+      <p class="section-text">
+        Sou estudante de Engenharia de Software e atuo com suporte
+        técnico a integrações de APIs Cash do banco Santander. Tenho experiência
+        em investigação de incidentes, análise de erros e observabilidade.
+        Estou aprofundando meus conhecimentos em desenvolvimento back-end,
+        Python e Inteligência Artificial Generativa.
+      </p>
+    </section>
 
-    <main>
-        <section>
-            <h2>Sobre mim</h2>
-            <p>
-    Sou estudante de Engenharia de Software e atuo
-    na área de tecnologia, prestando suporte técnico
-    a clientes que utilizam APIs bancárias.
+    <section id="habilidades" class="section reveal">
+      <p class="section-label">02 / TECNOLOGIAS</p>
+      <h2>Minha caixa de ferramentas.</h2>
+      <div class="skills">
+        <span>Python</span>
+        <span>APIs REST</span>
+        <span>Git & GitHub</span>
+        <span>SQL</span>
+        <span>Streamlit</span>
+        <span>Google Gemini</span>
+        <span>Pytest</span>
+        <span>HTML & CSS</span>
+        <span>JavaScript</span>
+      </div>
+    </section>
 
-    Tenho experiência com análise de erros,
-    investigação de incidentes, integrações de APIs
-    e ferramentas de observabilidade.
+    <section id="projetos" class="section reveal">
+      <p class="section-label">03 / PROJETOS</p>
+      <h2>Projetos que saíram do papel.</h2>
 
-    Atualmente, estou aprofundando meus conhecimentos
-    em Python, desenvolvimento backend e Inteligência
-    Artificial Generativa, buscando transformar
-    problemas reais em soluções tecnológicas.
-</p>
+      <article class="project-card">
+        <div class="project-content">
+          <span class="project-label">PROJETO EM DESTAQUE</span>
+          <h3>Smart API Assistant <span>↗</span></h3>
+          <p>
+            Aplicação web desenvolvida para consultar códigos HTTP
+            e auxiliar na investigação de problemas em APIs REST,
+            utilizando inteligência artificial com Google Gemini.
+          </p>
+          <div class="skills project-skills">
+            <span>Python</span>
+            <span>Streamlit</span>
+            <span>Gemini API</span>
+            <span>Pytest</span>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="https://smart-api-assistant.streamlit.app/" target="_blank" rel="noopener noreferrer">Testar aplicação ↗</a>
+            <a class="btn secondary" href="https://github.com/moraesabrina/Smart-API-Assistant" target="_blank" rel="noopener noreferrer">Ver código</a>
+          </div>
+        </div>
+        <div class="project-visual" aria-hidden="true">
+          <div class="api-icon">{ API }</div>
+          <span>SMART API ASSISTANT</span>
+          <small>Python • AI • REST</small>
+        </div>
+      </article>
+    </section>
 
-        </section>
+    <section id="contato" class="section contact reveal">
+      <p class="section-label">04 / CONTATO</p>
+      <h2>Vamos construir algo juntos?</h2>
+      <p>Estou em constante evolução e aberta a oportunidades na área de tecnologia.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://www.linkedin.com/in/sabrinacmoraes/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a class="btn secondary" href="https://github.com/moraesabrina" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+    </section>
+  </main>
 
-        <section>
-            <h2>Minhas habilidades</h2>
-            <p>Python | APIs REST | Git | GitHub | SQL</p>
-        </section>
-
-        <section>
-            <h2>Meus projetos</h2>
-            <h3>Smart API Assistant</h3>
-            <p>
-                Assistente desenvolvido em Python para consulta
-                e interpretação de códigos HTTP.
-            </p>
-
-            <a href="https://github.com/moraesabrina/Smart-API-Assistant"
-               target="_blank" rel="noopener noreferrer">
-                Ver projeto no GitHub
-            </a>
-        </section>
-        
-<section>
-    <h2>Vamos nos conectar?</h2>
-    
-<a href="https://www.linkedin.com/in/sabrinacmoraes/"
-   target="_blank"
-   rel="noopener noreferrer">
-    LinkedIn
-</a>
-
-    <p>
-        Estou em constante aprendizado e aberta
-        a oportunidades para desenvolver minhas
-        habilidades em tecnologia.
-    </p>
-
-    <a href="https://github.com/moraesabrina"
-       target="_blank"
-       rel="noopener noreferrer">
-        GitHub
-    </a>
-</section>
-
-    </main>
-
-    <footer>
-        <p>Desenvolvido por Sabrina Moraes 💜</p>
-    </footer>
-
+  <footer>
+    <span>© <span id="year"></span> Sabrina Moraes</span>
+    <span>Desenvolvido com HTML, CSS & JavaScript 💜</span>
+  </footer>
 </body>
 </html>
